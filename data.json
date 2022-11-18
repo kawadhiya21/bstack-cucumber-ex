@@ -1,0 +1,89 @@
+[
+  {
+    "id": "browserstack-test",
+    "uri": "features/sample.feature",
+    "keyword": "Feature",
+    "name": "Browserstack test",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "browserstack-test;can-add-the-product-in-cart",
+        "keyword": "Scenario",
+        "name": "Can add the product in cart",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I visit bstackdemo website",
+            "line": 4,
+            "match": {
+              "location": "features/sample_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5406076000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I add a product to the cart",
+            "line": 5,
+            "match": {
+              "location": "features/sample_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 610332000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see same product in cart section",
+            "line": 6,
+            "match": {
+              "location": "features/sample_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 350704000
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.15.1/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.15.1/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.15.1/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 485462000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
